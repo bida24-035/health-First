@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HealthCare Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .service-card img {
+      height: 150px;
+      object-fit: cover;
+    }
+      .dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+  }
+
+  .dark-mode a {
+    color: #90caf9 !important;
+  }
+
+  .dark-mode .navbar,
+  .dark-mode .bg-light {
+    background-color: #1f1f1f !important;
+  }
+
+  .dark-mode .card,
+  .dark-mode .btn,
+  .dark-mode .bg-white {
+    background-color: #2c2c2c !important;
+    color: white !important;
+  }
+
+  .dark-mode .btn-outline-success {
+    border-color: white;
+    color: white;
+  }
+
+  .dark-mode .btn-outline-success:hover {
+    background-color: white;
+    color: #2c2c2c;
+  }
+  </style>
+</head>
+<body>
+    <header class="bg-success text-white py-3">
+    <div class="container text-center">
+      <h1>Health First</h1>
+      <p class="lead">Your wellness is your wealth</p>
+    </div>
+    <a class="navbar-brand" href="index.html">
+  <img src="images/doctors logo.jpg" alt="HealthCare Logo" height="80" width="80" style="margin-top: -180px;">
+    </a>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">HealthCare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#services.html">services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+        </ul>
+      </div>
+    </div> 
+  </nav>
+
+  <!-- Hero Carousel -->
+  <div id="patientCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Add 9 images here -->
+      <div class="carousel-item active">
+        <img src="images/OIP (2).jpg" class="d-block w-100" alt="Happy Patient 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/oif 8 (2).jpg" class="d-block w-100" alt="Happy Patient 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/OIF18 (2).jpg" class="d-block w-100" alt="Happy Patient 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/OIP (3).jpg" class="d-block w-100" alt="Happy Patient 4">
+      </div>
+      <div class="carousel-item">
+        <img src="images/OIP (6).jpg" class="d-block w-100" alt="Happy Patient 5">
+      </div>
+      <div class="carousel-item">
+        <img src="images/OIP 11 (2).jpg" class="d-block w-100" alt="Happy Patient 6">
+      </div>
+      <div class="carousel-item">
+        <img src="images/OIP 12 (2).jpg" class="d-block w-100" alt="Happy Patient 7">
+      </div>
+      <div class="carousel-item">
+        <img src="images/OIP 14.jpg" class="d-block w-100" alt="Happy Patient 8">
+      </div>
+      <div class="carousel-item">
+        <img src="images/OIP 16 (2).jpg" class="d-block w-100" alt="Happy Patient 9">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#patientCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#patientCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Services Section -->
+  <section class="container my-5">
+    <h2 class="text-center text-success mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm">
+          <img src="images/Theraphy.jpg" class="card-img-top" alt="Therapy">
+          <div class="card-body">
+            <h5 class="card-title">Therapy Sessions</h5>
+            <p class="card-text">P450 per hour</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm">
+          <img src="images/Massage.jpeg.jpg" class="card-img-top" alt="Massage">
+          <div class="card-body">
+            <h5 class="card-title">Body Massaging</h5>
+            <p class="card-text">P300 per session</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm">
+          <img src="images/X-ray.jpeg.jpg" class="card-img-top" alt="X-Ray">
+          <div class="card-body">
+            <h5 class="card-title">X-Ray Booking</h5>
+            <p class="card-text">P600 per scan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm">
+          <img src="images/Consaltation.jpeg.jpg" class="card-img-top" alt="Consultation">
+          <div class="card-body">
+            <h5 class="card-title">Medical Consultation</h5>
+            <p class="card-text">P350 per visit</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card shadow-sm">
+          <img src="images/Nutrition.jpeg.jpg" class="card-img-top" alt="Nutrition">
+          <div class="card-body">
+            <h5 class="card-title">Nutrition Advice</h5>
+            <p class="card-text">P250 per session</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center text-success mb-4">Meet Our Doctors</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3">
+          <img src="images/Dr Linda.jpeg.jpg" class="rounded-circle img-fluid mb-2" alt="Doctor 1">
+          <h6>Dr. Linda Mokoena</h6>
+          <p>General Practitioner</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/Dr Karabo.jpeg.jpg" class="rounded-circle img-fluid mb-2" alt="Doctor 2">
+          <h6>Dr. Karabo Molefe</h6>
+          <p>Therapist</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/Dr Tshepho.jpeg.jpg" class="rounded-circle img-fluid mb-2" alt="Doctor 3">
+          <h6>Dr. Tshepo Ndlovu</h6>
+          <p>Nutritionist</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/Dr Naledi.jpeg.jpg" class="rounded-circle img-fluid mb-2" alt="Doctor 4">
+          <h6>Dr. Naledi Dlamini</h6>
+          <p>Radiologist</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section style="margin-left: 1100px;" class="text-center my-4">
+  <div class="container">
+    <h5>Customize Appearance</h5>
+    <button class="btn btn-outline-primary me-2" onclick="increaseFont()">A+</button>
+    <button class="btn btn-outline-primary me-2" onclick="decreaseFont()">A-</button>
+    <button class="btn btn-outline-dark me-2" onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+   <footer class="bg-dark text-white mt-5" id="contact">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contact Us</h5>
+          <p>Email: support@healthcare.com</p>
+          <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-white me-2">Facebook</a>
+          <a href="#" class="text-white">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+   let currentFontSize = 16;
+
+  function increaseFont() {
+    currentFontSize += 2;
+    document.body.style.fontSize = currentFontSize + "px";
+  }
+
+  function decreaseFont() {
+    if (currentFontSize > 10) {
+      currentFontSize -= 2;
+      document.body.style.fontSize = currentFontSize + "px";
+    }
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    document.querySelectorAll('*').forEach(el => {
+      if (!el.classList.contains('btn')) {
+        el.classList.toggle('dark-mode');
+      }
+    });
+  }
+
+</script>
+</body>
+</html>

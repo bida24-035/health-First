@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthCare Awareness</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+    body {
+      background-image: url('images/background.jpg'); /* 👈 Make sure this path is correct */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Optional: add a slight background color overlay to improve readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+      z-index: -1;
+    }
+  
+  .dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+  }
+
+  .dark-mode a {
+    color: #90caf9 !important;
+  }
+
+  .dark-mode .navbar,
+  .dark-mode .bg-light {
+    background-color: #1f1f1f !important;
+  }
+
+  .dark-mode .card,
+  .dark-mode .btn,
+  .dark-mode .bg-white {
+    background-color: #2c2c2c !important;
+    color: white !important;
+  }
+
+  .dark-mode .btn-outline-success {
+    border-color: white;
+    color: white;
+  }
+
+  .dark-mode .btn-outline-success:hover {
+    background-color: white;
+    color: #2c2c2c;
+  }
+
+  </style>
+</head>
+<body >
+  <!-- Header -->
+  <header class="bg-success text-white py-3">
+    <div class="container text-center">
+      <h1>Health First</h1>
+      <p class="lead">Your wellness is your wealth</p>
+    </div>
+    <a class="navbar-brand" href="index.html">
+  <img src="images/doctors logo.jpg" alt="HealthCare Logo" height="80" width="80" style="margin-top: -180px;">
+    </a>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">HealthCare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awareness">Awareness</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div> 
+  </nav>
+
+  <!-- Awareness Section -->
+  <section id="awareness" class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="text-success">Take Care of Your Health</h2>
+        <p class="lead">Maintaining a healthy lifestyle prevents disease, improves mental well-being, and increases life expectancy. Start today—your body will thank you!</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/healthawareness.jpg" alt="Health Awareness" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-light py-5 text-center">
+    <div class="container">
+      <h3 class="mb-4">Join Us in Building a Healthier Community</h3>
+      <button class="btn btn-success me-3" onclick="goToLogin()">Login</button>
+      <button class="btn btn-outline-success" onclick="goToSignUp()">Sign Up</button>
+    </div>
+  </section>
+
+   <!-- Theme Toggle -->
+<section style="margin-left: 1100px;" class="text-center my-4">
+  <div class="container">
+    <h5>Customize Appearance</h5>
+    <button class="btn btn-outline-primary me-2" onclick="increaseFont()">A+</button>
+    <button class="btn btn-outline-primary me-2" onclick="decreaseFont()">A-</button>
+    <button class="btn btn-outline-dark me-2" onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-5" id="contact">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contact Us</h5>
+          <p>Email: support@healthcare.com</p>
+          <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-white me-2">Facebook</a>
+          <a href="#" class="text-white">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap and Custom Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function goToLogin() {
+      window.location.href = "login.html";
+    }
+
+    function goToSignUp() {
+      window.location.href = "signup.html";
+    }
+
+  let currentFontSize = 16;
+
+  function increaseFont() {
+    currentFontSize += 2;
+    document.body.style.fontSize = currentFontSize + "px";
+  }
+
+  function decreaseFont() {
+    if (currentFontSize > 10) {
+      currentFontSize -= 2;
+      document.body.style.fontSize = currentFontSize + "px";
+    }
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    document.querySelectorAll('*').forEach(el => {
+      if (!el.classList.contains('btn')) {
+        el.classList.toggle('dark-mode');
+      }
+    });
+  }
+
+</script>
+</body>
+</html>

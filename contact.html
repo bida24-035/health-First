@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - HealthCare Awareness</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+      .dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+  }
+
+  .dark-mode a {
+    color: #90caf9 !important;
+  }
+
+  .dark-mode .navbar,
+  .dark-mode .bg-light {
+    background-color: #1f1f1f !important;
+  }
+
+  .dark-mode .card,
+  .dark-mode .btn,
+  .dark-mode .bg-white {
+    background-color: #2c2c2c !important;
+    color: white !important;
+  }
+
+  .dark-mode .btn-outline-success {
+    border-color: white;
+    color: white;
+  }
+
+  .dark-mode .btn-outline-success:hover {
+    background-color: white;
+    color: #2c2c2c;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-success text-white py-3">
+    <div class="container text-center">
+      <h1>Contact HealthCare</h1>
+      <p class="lead">We're here to help you stay healthy</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">HealthCare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Contact</a></li>
+           <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <section class="container my-5">
+    <h2 class="text-success text-center mb-4">Get in Touch</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h4>Contact Information</h4>
+        <p>Email: support@healthcare.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Wellness Street, Healthy City, HC 10001</p>
+        <h5 class="mt-4">Follow Us</h5>
+        <a href="#" class="text-success me-2">Facebook</a>
+        <a href="#" class="text-success">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-left: 1100px;" class="text-center my-4">
+  <div class="container">
+    <h5>Customize Appearance</h5>
+    <button class="btn btn-outline-primary me-2" onclick="increaseFont()">A+</button>
+    <button class="btn btn-outline-primary me-2" onclick="decreaseFont()">A-</button>
+    <button class="btn btn-outline-dark me-2" onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4 text-center">
+      <p>&copy; 2025 HealthCare Awareness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+     let currentFontSize = 16;
+
+  function increaseFont() {
+    currentFontSize += 2;
+    document.body.style.fontSize = currentFontSize + "px";
+  }
+
+  function decreaseFont() {
+    if (currentFontSize > 10) {
+      currentFontSize -= 2;
+      document.body.style.fontSize = currentFontSize + "px";
+    }
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    document.querySelectorAll('*').forEach(el => {
+      if (!el.classList.contains('btn')) {
+        el.classList.toggle('dark-mode');
+      }
+    });
+  }
+
+  </script>
+</body>
+</html>
