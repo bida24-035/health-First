@@ -1,4 +1,4 @@
-<script>
+
   let currentFontSize = 16;
   let isWhiteText = false;
 
@@ -18,4 +18,3 @@
     isWhiteText = !isWhiteText;
     document.body.style.color = isWhiteText ? "white" : "black";
   }
-</script>
