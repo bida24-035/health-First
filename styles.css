@@ -82,7 +82,7 @@
     }
 
 .carousel-item img {
-  height: 100px; /* Adjust this value to your desired height */
+  height: 300px; /* Adjust this value to your desired height */
   object-fit: cover; /* Ensures the image covers the area without distortion, cropping if necessary */
   width: 100%; /* Keep width at 100% to maintain responsiveness within the carousel */
 }
